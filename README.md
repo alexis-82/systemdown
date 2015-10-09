@@ -3,7 +3,10 @@ Timer for shutdown
 
 **DOWNLOAD COMMAND:** 
 
-git clone https://github.com/alexis-82/systemdown.git
+'''sh
+$git clone https://github.com/alexis-82/systemdown.git
+'''
+
 
 **INSTALLATION:** 
 
