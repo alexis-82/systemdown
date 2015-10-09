@@ -11,4 +11,4 @@ git clone https://github.com/alexis-82/systemdown.git
 
 **NEXT STEP:**
 
-Open your terminal and launch the command systemdown
+Open your terminal and launch the command: systemdown
