@@ -28,8 +28,8 @@ print
 clock = strftime("%H:%M")
 print "Ora esatta del sistema:",clock
 print
-print "[1] Sistema autentificazione 'su'"
-print "[2] Sistema autentificazione 'sudo'"
+print "[1] Sistema autenticazione 'su'"
+print "[2] Sistema autenticazione 'sudo'"
 print "[3] Altro sistema"
 print 
 print "[0] Esci"
