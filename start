@@ -35,7 +35,6 @@ print
 print "[0] Esci"
 print 
 print 
-back = 0
 
 try:
     select = input(": ")

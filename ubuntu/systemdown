@@ -36,7 +36,6 @@ print
 print "[0] Esci"
 print 
 print 
-back = 0
 
 try:
     select = input(": ")
@@ -64,6 +63,7 @@ def shutdown():
 	    os.system(convert % (ora))
 	    print
 	    print
+            time.sleep(2)
 	    print (Fore.RED + "Spegnimento impostato!")
 	    print (Fore.RESET)
 	    print
@@ -78,6 +78,7 @@ def shutdownmin():
 		os.system(convert % (minuti))
 		print
 		print
+                time.sleep()2
 		print (Fore.RED + "Spegnimento impostato!")
 		print (Fore.RESET)
 		print
@@ -89,6 +90,7 @@ def stop():
 	if select == 3:
 		subprocess.call("sudo shutdown -c", shell=True)
 		print
+                time.sleep(2)
 		print (Fore.RED + "Pianificazione annullata!")
 		print (Fore.RESET)
 		print
