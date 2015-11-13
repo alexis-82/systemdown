@@ -37,7 +37,18 @@ print "[0] Esci"
 print 
 print 
 back = 0
-select = input("Selezionare numero: ")
+
+try:
+    select = input(": ")
+    if select >= 4:
+        print "Opzione non trovata!"
+        raw_input("Premere un tasto per contiuare")
+        os.system("systemdown")
+except NameError:
+    print "Comando non valido!"
+    raw_input("Premere un tasto per continuare")
+    os.system("systemdown")
+
 
 # Code  
 def close():
@@ -49,25 +60,29 @@ close()
 def shutdown():
 	if select == 1:
 		ora = raw_input("Inserire orario: ")
-		convert = "shutdown %s"
+		convert = "shutdown %s &"
 		os.system(convert % (ora))
 		print
 		print
 		print (Fore.RED + "Spegnimento impostato!")
 		print (Fore.RESET)
 		print
+                print (Fore.RED + "Premere un tasto per continuare.")
+                print (Fore.RESET)
 shutdown()
 
 def shutdownmin():
 	if select == 2:
 		minuti = raw_input("Inserire i minuti: ")
-		convert = "shutdown +%s"
+		convert = "shutdown +%s &"
 		os.system(convert % (minuti))
 		print
 		print
 		print (Fore.RED + "Spegnimento impostato!")
 		print (Fore.RESET)
 		print
+                print (Fore.RED + "Premere un tasto per continuare.")
+                print (Fore.RESET)
 shutdownmin()
 
 def stop():

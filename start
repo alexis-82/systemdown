@@ -36,7 +36,18 @@ print "[0] Esci"
 print 
 print 
 back = 0
-select = input("Selezionare numero: ")
+
+try:
+    select = input(": ")
+    if select >= 4:
+        print "Opzione non trovata!"
+        raw_input("Premere un tasto per contiuare")
+        os.system("./systemdown")
+except NameError:
+    print "Comando non valido!"
+    raw_input("Premere un tasto per continuare")
+    os.system("./systemdown")
+
 
 # Code
 def close():
