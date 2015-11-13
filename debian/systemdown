@@ -59,15 +59,15 @@ close()
 def shutdown():
 	if select == 1:
             ora = raw_input("Inserire orario: [hh:mm] ")
-		convert = "su root -c 'shutdown -h %s &'"
-		os.system(convert % (ora))
-		print
-		print
-		print (Fore.RED + "Spegnimento impostato!")
-		print (Fore.RESET)
-		print
-                print (Fore.RED + "Premere un tasto per continuare.")
-                print (Fore.RESET)
+            convert = "su root -c 'shutdown -h %s &'"
+	    os.system(convert % (ora))
+	    print
+	    print
+	    print (Fore.RED + "Spegnimento impostato!")
+	    print (Fore.RESET)
+	    print
+            print (Fore.RED + "Premere un tasto per continuare.")
+            print (Fore.RESET)
 shutdown()
 
 def shutdownmin():
