@@ -6,7 +6,7 @@
 # Importazione
 
 import os, sys, subprocess
-from time import strftime
+from time import strftime, time
 from lib import Fore, Back, Style
 
 subprocess.call("clear", shell=True)
@@ -62,10 +62,11 @@ def shutdown():
 	    os.system(convert % (ora))
 	    print
 	    print
-            time.sleep(2)
+            #time.sleep(2)
 	    print (Fore.RED + "Spegnimento impostato!")
 	    print (Fore.RESET)
 	    print
+            time.sleep(2)
             print (Fore.RED + "Premere un tasto per continuare.")
             print (Fore.RESET)
 shutdown()
@@ -77,10 +78,11 @@ def shutdownmin():
 		os.system(convert % (minuti))
 		print
 		print
-                time.sleep(2)
+                #time.sleep(2)
 		print (Fore.RED + "Spegnimento impostato!")
 		print (Fore.RESET)
 		print
+                time.sleep(2)
                 print (Fore.RED+ "Premere un tasto per continuare.")
                 print (Fore.RESET)
 shutdownmin()
