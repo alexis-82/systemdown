@@ -6,8 +6,9 @@
 # Importazione
 
 import os, sys, subprocess
-from time import strftime, time
 from lib import Fore, Back, Style
+from time import strftime
+import time
 
 subprocess.call("clear", shell=True)
 
