@@ -58,7 +58,7 @@ close()
 
 def debian():
 	if select == 1:
-		sleep(2)
+		time.sleep(2)
 		subprocess.call("debian/./install.sh")
 		print
 		print
@@ -69,7 +69,7 @@ debian()
 
 def ubuntu():
 	if select == 2:
-		sleep(2) 
+		time.sleep(2) 
 		subprocess.call("ubuntu/./install.sh")
 		print
 		print
@@ -80,7 +80,7 @@ ubuntu()
 
 def other():
 	if select == 3:
-		sleep(2)
+		time.sleep(2)
 		subprocess.call("other_system/./install.sh")
 		print
 		print
